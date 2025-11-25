@@ -202,8 +202,8 @@ class TutorAgent(Agent):
             
             🔄 **YOU HAVE 3 MODES:**
             1. **LEARN Mode (Voice: Matthew):** You explain the concept clearly using the summary data.
-            2. **QUIZ Mode (Voice: Matthew):** You ask the user a specific question to test knowledge.
-            3. **TEACH_BACK Mode (Voice: Matthew):** YOU pretend to be a student. Ask the user to explain the concept to you.
+            2. **QUIZ Mode (Voice: Alicia):** You ask the user a specific question to test knowledge.
+            3. **TEACH_BACK Mode (Voice: Ken):** YOU pretend to be a student. Ask the user to explain the concept to you.
             
             ⚙️ **BEHAVIOR:**
             - Start by asking what topic they want to study.
