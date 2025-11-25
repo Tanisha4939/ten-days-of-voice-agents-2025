@@ -1,0 +1,32 @@
+[
+    {
+        "id": "python_basics",
+        "title": "Python Basics",
+        "summary": "Python is a high-level programming language used for automation, data analysis, AI, backend development, and more. It uses simple syntax and supports multiple paradigms.",
+        "sample_question": "What is the difference between a list and a tuple in Python?"
+    },
+    {
+        "id": "sql",
+        "title": "SQL Fundamentals",
+        "summary": "SQL (Structured Query Language) is used to store, manage, and query data in relational databases.",
+        "sample_question": "What is the difference between WHERE and HAVING in SQL?"
+    },
+    {
+        "id": "networking",
+        "title": "Computer Networking",
+        "summary": "Networking refers to connecting computers to share data. Key concepts include IP addresses, routers, switches, and networking protocols.",
+        "sample_question": "What is the difference between TCP and UDP?"
+    },
+    {
+        "id": "cloud",
+        "title": "Cloud Computing",
+        "summary": "Cloud computing enables remote servers for storage, computing, networking, and software delivery. Popular providers: AWS, Azure, GCP.",
+        "sample_question": "What is IaaS, PaaS, and SaaS?"
+    },
+    {
+        "id": "operating_system",
+        "title": "Operating System",
+        "summary": "An OS manages hardware, processes, memory, and provides services to applications.",
+        "sample_question": "What is the difference between process and thread?"
+    }
+]
