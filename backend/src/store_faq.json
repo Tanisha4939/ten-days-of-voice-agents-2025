@@ -1,0 +1,18 @@
+[
+    {
+        "question": "What services do you offer?",
+        "answer": "TripWave Travels is an Indian travel agency that offers domestic and international tour packages, custom trip planning, hotel and flight bookings, and weekend getaways. We also help with visas and airport transfers for selected destinations."
+    },
+    {
+        "question": "How much do your tour packages cost?",
+        "answer": "We have budget, standard and premium packages. Pricing depends on destination, hotel category, travel dates and group size. For this demo, I\u2019ll only talk in rough ranges instead of exact prices."
+    },
+    {
+        "question": "Do you offer EMI or flexible payment options?",
+        "answer": "For many trips we support part-payment or staged payments before the travel date. In this demo, details are kept high level, but in a real setup we would share exact EMI and payment options."
+    },
+    {
+        "question": "Do you handle corporate or group travel?",
+        "answer": "Yes, TripWave Travels also handles corporate offsites, college trips and family group tours. We can customize itineraries based on budget, headcount and duration."
+    }
+]
