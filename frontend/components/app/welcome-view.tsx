@@ -1,18 +1,56 @@
 import { Button } from '@/components/livekit/button';
 
-function WelcomeImage() {
+function OceanIcon() {
+  return (
+    <div className="relative mb-8">
+      {/* Glow halo */}
+      <div className="absolute inset-0 flex items-center justify-center">
+        <div className="h-32 w-32 rounded-full bg-gradient-to-br from-cyan-500/30 via-sky-500/20 to-emerald-400/30 blur-xl animate-pulse" />
+      </div>
+
+      {/* Island + wave emoji cluster */}
+      <div className="relative flex items-center justify-center">
+        <div className="h-24 w-24 rounded-full bg-gradient-to-br from-sky-500 to-emerald-500 flex items-center justify-center shadow-[0_0_35px_rgba(56,189,248,0.55)]">
+          <span className="text-4xl drop-shadow-md">🏝️</span>
+        </div>
+
+        {/* Floating bubbles / icons */}
+        <div className="absolute -top-3 -right-2 text-2xl animate-bounce">🌊</div>
+        <div
+          className="absolute -bottom-1 -left-3 text-xl animate-bounce"
+          style={{ animationDelay: '0.25s' }}
+        >
+          🐬
+        </div>
+        <div
+          className="absolute top-1 left-10 text-lg animate-bounce"
+          style={{ animationDelay: '0.5s' }}
+        >
+          🐚
+        </div>
+      </div>
+    </div>
+  );
+}
+
+function ShellIcon({ className }: { className?: string }) {
   return (
     <svg
-      width="64"
-      height="64"
-      viewBox="0 0 64 64"
+      className={className}
+      viewBox="0 0 24 24"
       fill="none"
-      xmlns="http://www.w3.org/2000/svg"
-      className="text-fg0 mb-4 size-16"
+      stroke="currentColor"
+      strokeWidth={1.8}
     >
       <path
-        d="M15 24V40C15 40.7957 14.6839 41.5587 14.1213 42.1213C13.5587 42.6839 12.7956 43 12 43C11.2044 43 10.4413 42.6839 9.87868 42.1213C9.31607 41.5587 9 40.7957 9 40V24C9 23.2044 9.31607 22.4413 9.87868 21.8787C10.4413 21.3161 11.2044 21 12 21C12.7956 21 13.5587 21.3161 14.1213 21.8787C14.6839 22.4413 15 23.2044 15 24ZM22 5C21.2044 5 20.4413 5.31607 19.8787 5.87868C19.3161 6.44129 19 7.20435 19 8V56C19 56.7957 19.3161 57.5587 19.8787 58.1213C20.4413 58.6839 21.2044 59 22 59C22.7956 59 23.5587 58.6839 24.1213 58.1213C24.6839 57.5587 25 56.7957 25 56V8C25 7.20435 24.6839 6.44129 24.1213 5.87868C23.5587 5.31607 22.7956 5 22 5ZM32 13C31.2044 13 30.4413 13.3161 29.8787 13.8787C29.3161 14.4413 29 15.2044 29 16V48C29 48.7957 29.3161 49.5587 29.8787 50.1213C30.4413 50.6839 31.2044 51 32 51C32.7956 51 33.5587 50.6839 34.1213 50.1213C34.6839 49.5587 35 48.7957 35 48V16C35 15.2044 34.6839 14.4413 34.1213 13.8787C33.5587 13.3161 32.7956 13 32 13ZM42 21C41.2043 21 40.4413 21.3161 39.8787 21.8787C39.3161 22.4413 39 23.2044 39 24V40C39 40.7957 39.3161 41.5587 39.8787 42.1213C40.4413 42.6839 41.2043 43 42 43C42.7957 43 43.5587 42.6839 44.1213 42.1213C44.6839 41.5587 45 40.7957 45 40V24C45 23.2044 44.6839 22.4413 44.1213 21.8787C43.5587 21.3161 42.7957 21 42 21ZM52 17C51.2043 17 50.4413 17.3161 49.8787 17.8787C49.3161 18.4413 49 19.2044 49 20V44C49 44.7957 49.3161 45.5587 49.8787 46.1213C50.4413 46.6839 51.2043 47 52 47C52.7957 47 53.5587 46.6839 54.1213 46.1213C54.6839 45.5587 55 44.7957 55 44V20C55 19.2044 54.6839 18.4413 54.1213 17.8787C53.5587 17.3161 52.7957 17 52 17Z"
-        fill="currentColor"
+        d="M12 3C8.5 3 4 5.5 4 11c0 4.5 3 8 8 8s8-3.5 8-8c0-5.5-4.5-8-8-8z"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+      <path
+        d="M7 11c0 3 2.5 5 5 5s5-2 5-5"
+        strokeLinecap="round"
+        strokeLinejoin="round"
       />
     </svg>
   );
@@ -29,33 +67,93 @@ export const WelcomeView = ({
   ref,
 }: React.ComponentProps<'div'> & WelcomeViewProps) => {
   return (
-    <div ref={ref}>
-      <section className="bg-background flex flex-col items-center justify-center text-center">
-        <WelcomeImage />
-
-        <p className="text-foreground max-w-prose pt-1 leading-6 font-medium">
-          Chat live with your voice AI agent
-        </p>
-
-        <Button variant="primary" size="lg" onClick={onStartCall} className="mt-6 w-64 font-mono">
-          {startButtonText}
-        </Button>
-      </section>
-
-      <div className="fixed bottom-5 left-0 flex w-full items-center justify-center">
-        <p className="text-muted-foreground max-w-prose pt-1 text-xs leading-5 font-normal text-pretty md:text-sm">
-          Need help getting set up? Check out the{' '}
-          <a
-            target="_blank"
-            rel="noopener noreferrer"
-            href="https://docs.livekit.io/agents/start/voice-ai/"
-            className="underline"
-          >
-            Voice AI quickstart
-          </a>
-          .
-        </p>
+    <div
+      ref={ref}
+      className="min-h-screen bg-gradient-to-br from-slate-950 via-sky-950 to-slate-950 relative overflow-hidden"
+    >
+      {/* Soft moving water blobs */}
+      <div className="pointer-events-none absolute inset-0 opacity-60">
+        <div className="absolute -top-32 -left-20 h-64 w-64 rounded-full bg-sky-500/25 blur-3xl animate-pulse" />
+        <div
+          className="absolute top-1/3 -right-24 h-72 w-72 rounded-full bg-cyan-400/25 blur-3xl animate-pulse"
+          style={{ animationDelay: '0.7s' }}
+        />
+        <div
+          className="absolute bottom-[-5rem] left-1/4 h-64 w-64 rounded-full bg-emerald-400/20 blur-3xl animate-pulse"
+          style={{ animationDelay: '1.3s' }}
+        />
       </div>
+
+      {/* Tiny plankton dots */}
+      <div className="pointer-events-none absolute inset-0">
+        <div className="absolute top-20 left-16 h-1 w-1 rounded-full bg-cyan-200/70 animate-pulse" />
+        <div
+          className="absolute top-40 right-24 h-1.5 w-1.5 rounded-full bg-sky-300/70 animate-pulse"
+          style={{ animationDelay: '0.4s' }}
+        />
+        <div
+          className="absolute bottom-28 left-1/3 h-1 w-1 rounded-full bg-teal-200/70 animate-pulse"
+          style={{ animationDelay: '0.9s' }}
+        />
+        <div
+          className="absolute top-1/3 right-1/4 h-1.5 w-1.5 rounded-full bg-cyan-100/80 animate-pulse"
+          style={{ animationDelay: '1.4s' }}
+        />
+      </div>
+
+      <section className="relative z-10 flex flex-col items-center justify-center text-center px-4 py-12">
+        <OceanIcon />
+
+        {/* Heading */}
+        <div className="mb-4">
+          <div className="text-xs md:text-sm uppercase tracking-[0.25em] text-cyan-300/80 mb-2 font-semibold">
+            🌊 Welcome Explorer 🌊
+          </div>
+          <h1 className="text-4xl md:text-5xl font-bold bg-gradient-to-r from-cyan-300 via-sky-300 to-emerald-300 bg-clip-text text-transparent mb-3 drop-shadow-[0_0_25px_rgba(56,189,248,0.6)]">
+            Ocean Game Master
+          </h1>
+          <p className="text-base md:text-lg text-sky-200/90">
+            A voice-powered adventure across islands, reefs, and forgotten tides.
+          </p>
+        </div>
+
+        {/* Intro card */}
+        <div className="bg-gradient-to-br from-sky-900/50 via-cyan-900/60 to-slate-900/70 border border-cyan-500/30 rounded-2xl p-6 md:p-7 max-w-2xl mb-6 backdrop-blur-xl shadow-[0_0_35px_rgba(15,118,110,0.45)]">
+          <div className="flex items-start gap-3 mb-3">
+            <ShellIcon className="h-7 w-7 text-cyan-300 flex-shrink-0 mt-1" />
+            <div className="text-left">
+              <p className="text-cyan-100 text-sm md:text-base leading-relaxed mb-2">
+                <span className="text-cyan-300 font-semibold">
+                  The sea is listening to your voice...
+                </span>
+              </p>
+              <p className="text-sky-100/90 text-xs md:text-sm leading-relaxed">
+                Speak to your AI Game Master and explore a living ocean world. Discover secret
+                grottoes, meet water spirits, and decide the fate of lost relics — all just by
+                saying what you want to do next.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        {/* ✅ START BUTTON – moved up so hamesha visible rahe */}
+        <div className="mb-8 flex flex-col items-center">
+          <Button
+            variant="primary"
+            size="lg"
+            onClick={onStartCall}
+            className="w-72 md:w-80 font-semibold text-base md:text-lg bg-gradient-to-r from-cyan-500 via-sky-500 to-emerald-500 hover:from-cyan-400 hover:via-sky-400 hover:to-emerald-400 border border-cyan-300/60 shadow-[0_0_30px_rgba(56,189,248,0.6)] transition-all duration-300 hover:scale-[1.03] rounded-full"
+          >
+            {startButtonText || 'Begin Ocean Adventure'}
+          </Button>
+          <p className="text-sky-300/80 text-[11px] md:text-xs mt-3 italic">
+            Click to connect, then say: “Start the story”.
+          </p>
+        </div>
+
+        
+        
+      </section>
     </div>
   );
 };
