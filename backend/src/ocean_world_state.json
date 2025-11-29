@@ -1,0 +1,23 @@
+{
+  "session_id": "voice_assistant_room_8204",
+  "universe": "Tides of Aqualis",
+  "tone": "calm, adventurous, and slightly mysterious",
+  "difficulty": "normal",
+  "current_location": "Shore of the Shimmering Ocean",
+  "active_quest": "Investigate the strange glowing lights deep beneath the waves.",
+  "player": {
+    "name": "Unknown explorer",
+    "character_class": "Sea Wanderer",
+    "health": 100,
+    "status": "Healthy",
+    "inventory": [
+      "seashell compass",
+      "waterproof lantern"
+    ]
+  },
+  "events": [
+    "Session started. The explorer stands on the Shimmering Shore, where gentle waves glow with faint blue light under a cloudy sky."
+  ],
+  "created_at": "2025-11-29T12:51:44.119750Z",
+  "last_updated_at": "2025-11-29T12:51:44.127713Z"
+}

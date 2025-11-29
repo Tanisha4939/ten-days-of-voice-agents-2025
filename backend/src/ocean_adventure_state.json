@@ -1,0 +1,36 @@
+{
+  "session": {
+    "player_name": "Ganesha",
+    "current_scene": "intro",
+    "history": [],
+    "journal": [],
+    "inventory": [],
+    "named_npcs": {},
+    "choices_made": [],
+    "session_id": "65411255",
+    "started_at": "2025-11-29T14:53:47.165295Z"
+  },
+  "current_scene": {
+    "key": "intro",
+    "title": "Whispers of the Drowned Reef",
+    "description": "You wake on the pale sands of a crescent-shaped island, waves glowing faint blue in the pre-dawn light. Far out at sea, the silhouette of a leaning lighthouse rises from a jagged reef, its lantern long dark. To your right, a narrow path winds toward a small fishing village built on stilts over the water. Half-buried near your hand lies a barnacle-crusted shell box, washed up by the tide.",
+    "choices": {
+      "inspect_box": {
+        "desc": "Inspect the barnacle-crusted shell box beside you.",
+        "result_scene": "box"
+      },
+      "approach_tower": {
+        "desc": "Head toward the distant lighthouse out on the reef.",
+        "result_scene": "tower"
+      },
+      "walk_to_cottages": {
+        "desc": "Follow the path toward the stilted fishing village.",
+        "result_scene": "cottages"
+      }
+    }
+  },
+  "journal": [],
+  "inventory": [],
+  "history": [],
+  "last_updated_at": "2025-11-29T14:53:47.165295Z"
+}
