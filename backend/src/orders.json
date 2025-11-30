@@ -1,0 +1,105 @@
+[
+  {
+    "id": "ec13531f-b603-4382-a55e-716869cab29b",
+    "items": [
+      {
+        "product_id": "cap-001",
+        "name": "Adjustable Baseball Cap",
+        "quantity": 1,
+        "unit_amount": 499.0,
+        "line_total": 499.0,
+        "currency": "INR",
+        "size": null
+      }
+    ],
+    "total": 499.0,
+    "currency": "INR",
+    "created_at": "2025-11-30T12:24:28.903047Z"
+  },
+  {
+    "id": "de76e5a3-1725-44f0-bf83-fa59b7c7b96d",
+    "items": [
+      {
+        "product_id": "hoodie-002",
+        "name": "Blue Pullover Hoodie",
+        "quantity": 1,
+        "unit_amount": 1399.0,
+        "line_total": 1399.0,
+        "currency": "INR",
+        "size": "L"
+      }
+    ],
+    "total": 1399.0,
+    "currency": "INR",
+    "created_at": "2025-11-30T12:58:03.507973Z"
+  },
+  {
+    "id": "974a3edc-2cff-4659-a399-93b5c8936ec0",
+    "items": [
+      {
+        "product_id": "mug-002",
+        "name": "Travel Coffee Tumbler",
+        "quantity": 1,
+        "unit_amount": 899.0,
+        "line_total": 899.0,
+        "currency": "INR",
+        "size": null
+      },
+      {
+        "product_id": "hoodie-001",
+        "name": "Black Zip Hoodie",
+        "quantity": 1,
+        "unit_amount": 1499.0,
+        "line_total": 1499.0,
+        "currency": "INR",
+        "size": "L"
+      }
+    ],
+    "total": 2398.0,
+    "currency": "INR",
+    "created_at": "2025-11-30T13:01:10.127271Z"
+  },
+  {
+    "id": "82118bdd-3da0-4237-a5a8-5326c092ae5f",
+    "items": [
+      {
+        "product_id": "hoodie-001",
+        "name": "Black Zip Hoodie",
+        "quantity": 1,
+        "unit_amount": 1499.0,
+        "line_total": 1499.0,
+        "currency": "INR",
+        "size": "L"
+      },
+      {
+        "product_id": "tee-001",
+        "name": "Classic Logo T-Shirt",
+        "quantity": 1,
+        "unit_amount": 799.0,
+        "line_total": 799.0,
+        "currency": "INR",
+        "size": "L"
+      }
+    ],
+    "total": 2298.0,
+    "currency": "INR",
+    "created_at": "2025-11-30T14:21:21.375577Z"
+  },
+  {
+    "id": "f713d4ab-2288-4470-946f-5689a3d217e8",
+    "items": [
+      {
+        "product_id": "mug-001",
+        "name": "Stoneware Coffee Mug",
+        "quantity": 1,
+        "unit_amount": 499.0,
+        "line_total": 499.0,
+        "currency": "INR",
+        "size": null
+      }
+    ],
+    "total": 499.0,
+    "currency": "INR",
+    "created_at": "2025-11-30T14:28:09.384078Z"
+  }
+]
