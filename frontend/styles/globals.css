@@ -3,73 +3,100 @@
 
 @custom-variant dark (&:is(.dark *));
 
+/* 🌸 SwiftCart Pink Theme (Light mode) */
 :root {
   --radius: 0.625rem;
-  --background: oklch(1 0 0);
-  --foreground: oklch(0.145 0 0);
-  --card: oklch(1 0 0);
-  --card-foreground: oklch(0.145 0 0);
-  --popover: oklch(1 0 0);
-  --popover-foreground: oklch(0.145 0 0);
-  --primary: oklch(0.205 0 0);
-  --primary-foreground: oklch(0.985 0 0);
-  --secondary: oklch(0.97 0 0);
-  --secondary-foreground: oklch(0.205 0 0);
-  --muted: oklch(0.97 0 0);
-  --muted-foreground: oklch(0.556 0 0);
-  --accent: oklch(0.97 0 0);
-  --accent-foreground: oklch(0.205 0 0);
-  --destructive: oklch(0.577 0.245 27.325);
-  --border: oklch(0.922 0 0);
-  --input: oklch(0.922 0 0);
-  --ring: oklch(0.708 0 0);
-  --chart-1: oklch(0.646 0.222 41.116);
-  --chart-2: oklch(0.6 0.118 184.704);
-  --chart-3: oklch(0.398 0.07 227.392);
-  --chart-4: oklch(0.828 0.189 84.429);
-  --chart-5: oklch(0.769 0.188 70.08);
-  --sidebar: oklch(0.985 0 0);
-  --sidebar-foreground: oklch(0.145 0 0);
-  --sidebar-primary: oklch(0.205 0 0);
-  --sidebar-primary-foreground: oklch(0.985 0 0);
-  --sidebar-accent: oklch(0.97 0 0);
-  --sidebar-accent-foreground: oklch(0.205 0 0);
-  --sidebar-border: oklch(0.922 0 0);
-  --sidebar-ring: oklch(0.708 0 0);
+
+  /* main background + text */
+  --background: #fff6fb;
+  --foreground: #dc1d70;
+
+  /* cards + surfaces */
+  --card: #ffffff;
+  --card-foreground: #2a0b2c;
+  --popover: #ffffff;
+  --popover-foreground: #2a0b2c;
+
+  /* primary = hot pink */
+  --primary: #ff2e88;
+  --primary-foreground: #fff9fd;
+
+  /* secondary = baby pink */
+  --secondary: #ffe4f5;
+  --secondary-foreground: #b4256a;
+
+  --muted: #ffe4f5;
+  --muted-foreground: #a35587;
+
+  --accent: #ffc1e3;
+  --accent-foreground: #821b4c;
+
+  --destructive: #ff4b6b;
+
+  --border: #ffd0e7;
+  --input: #ffd0e7;
+  --ring: #ff8dc3;
+
+  /* charts / analytics colors */
+  --chart-1: #ff2e88;
+  --chart-2: #ff8dc3;
+  --chart-3: #ffb3d8;
+  --chart-4: #ff6ea8;
+  --chart-5: #ffc1e3;
+
+  /* sidebar */
+  --sidebar: #fff9fd;
+  --sidebar-foreground: #2a0b2c;
+  --sidebar-primary: #ff2e88;
+  --sidebar-primary-foreground: #fff9fd;
+  --sidebar-accent: #ffe4f5;
+  --sidebar-accent-foreground: #b4256a;
+  --sidebar-border: #ffd0e7;
+  --sidebar-ring: #ff8dc3;
 }
 
+/* 🌙 Pinky Dark mode */
 .dark {
-  --background: oklch(0.145 0 0);
-  --foreground: oklch(0.985 0 0);
-  --card: oklch(0.205 0 0);
-  --card-foreground: oklch(0.985 0 0);
-  --popover: oklch(0.269 0 0);
-  --popover-foreground: oklch(0.985 0 0);
-  --primary: oklch(0.922 0 0);
-  --primary-foreground: oklch(0.205 0 0);
-  --secondary: oklch(0.269 0 0);
-  --secondary-foreground: oklch(0.985 0 0);
-  --muted: oklch(0.269 0 0);
-  --muted-foreground: oklch(0.708 0 0);
-  --accent: oklch(0.371 0 0);
-  --accent-foreground: oklch(0.985 0 0);
-  --destructive: oklch(0.704 0.191 22.216);
-  --border: oklch(1 0 0 / 10%);
-  --input: oklch(1 0 0 / 15%);
-  --ring: oklch(0.556 0 0);
-  --chart-1: oklch(0.488 0.243 264.376);
-  --chart-2: oklch(0.696 0.17 162.48);
-  --chart-3: oklch(0.769 0.188 70.08);
-  --chart-4: oklch(0.627 0.265 303.9);
-  --chart-5: oklch(0.645 0.246 16.439);
-  --sidebar: oklch(0.205 0 0);
-  --sidebar-foreground: oklch(0.985 0 0);
-  --sidebar-primary: oklch(0.488 0.243 264.376);
-  --sidebar-primary-foreground: oklch(0.985 0 0);
-  --sidebar-accent: oklch(0.269 0 0);
-  --sidebar-accent-foreground: oklch(0.985 0 0);
-  --sidebar-border: oklch(1 0 0 / 10%);
-  --sidebar-ring: oklch(0.439 0 0);
+  --background: #e56399;
+  --foreground: #ffe4f5;
+
+  --card: #1f0718;
+  --card-foreground: #ffe4f5;
+  --popover: #2a0b23;
+  --popover-foreground: #ffe4f5;
+
+  --primary: #ff8dc3;
+  --primary-foreground: #2a0b2c;
+
+  --secondary: #3a0a2c;
+  --secondary-foreground: #ffe4f5;
+
+  --muted: #2b071f;
+  --muted-foreground: #ffb3d8;
+
+  --accent: #3a102d;
+  --accent-foreground: #ffe4f5;
+
+  --destructive: #ff6b7f;
+
+  --border: rgba(255, 193, 227, 0.25);
+  --input: rgba(255, 193, 227, 0.2);
+  --ring: #ff8dc3;
+
+  --chart-1: #ff8dc3;
+  --chart-2: #ffc1e3;
+  --chart-3: #ff6ea8;
+  --chart-4: #ffb3d8;
+  --chart-5: #ff2e88;
+
+  --sidebar: #1f0718;
+  --sidebar-foreground: #ffe4f5;
+  --sidebar-primary: #ff8dc3;
+  --sidebar-primary-foreground: #2a0b2c;
+  --sidebar-accent: #2b071f;
+  --sidebar-accent-foreground: #ffe4f5;
+  --sidebar-border: rgba(255, 193, 227, 0.25);
+  --sidebar-ring: #ff8dc3;
 }
 
 @theme inline {
@@ -119,6 +146,13 @@
   }
   body {
     @apply bg-background text-foreground;
+
+    /* 💕 stronger full-page pink gradient */
+    background:
+      radial-gradient(circle at 0% 0%, #ffe4f5 0, #ffc1e3 30%, transparent 60%),
+      radial-gradient(circle at 100% 0%, #ff6ea8 0, #ff2e88 45%, #ff8dc3 80%),
+      linear-gradient(to bottom right, #ff9ac6, #ffe4f5);
+    background-attachment: fixed;
   }
 }
 
@@ -128,26 +162,20 @@
     animation-duration: 3s;
     animation-iteration-count: infinite;
     animation-name: text-shimmer;
-    background: var(--muted-foreground)
-      gradient(
-        linear,
-        100% 0,
-        0 0,
-        from(var(--muted-foreground)),
-        color-stop(0.5, var(--secondary-foreground)),
-        to(var(--muted-foreground))
-      );
-    background: var(--muted-foreground) -webkit-gradient(
-        linear,
-        100% 0,
-        0 0,
-        from(var(--muted-foreground)),
-        color-stop(0.5, var(--secondary-foreground)),
-        to(var(--muted-foreground))
-      );
+    background-color: var(--muted-foreground);
+    background-image: linear-gradient(
+      to right,
+      var(--muted-foreground),
+      var(--secondary-foreground) 50%,
+      var(--muted-foreground)
+    );
     background-repeat: no-repeat;
-    background-size: 50% 200%;
+    background-size: 50% 100%;
+    background-position: -100% 0;
     display: inline-block;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
   }
 
   @keyframes text-shimmer {
