@@ -1,18 +1,67 @@
 import { Button } from '@/components/livekit/button';
 
-function WelcomeImage() {
+function ShoppingBagIcon() {
+  return (
+    <div className="relative mb-8">
+      {/* Pink gradient glow */}
+      <div className="absolute inset-0 flex items-center justify-center">
+        <div className="h-32 w-32 rounded-full bg-gradient-to-r from-pink-300/40 via-pink-400/40 to-pink-500/40 animate-pulse" />
+      </div>
+
+      {/* Shopping bag */}
+      <div className="relative flex items-center justify-center">
+        <svg
+          className="h-24 w-24 text-pink-500 drop-shadow-xl"
+          fill="none"
+          stroke="currentColor"
+          viewBox="0 0 24 24"
+          strokeWidth={1.5}
+        >
+          <path
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            d="M15.75 10.5V6a3.75 3.75 0 10-7.5 0v4.5m11.356-1.993l1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 01-1.12-1.243l1.264-12A1.125 1.125 0 015.513 7.5h12.974c.576 0 1.059.435 1.119 1.007zM8.625 10.5a.375.375 0 11-.75 0 .375.375 0 01.75 0zm7.5 0a.375.375 0 11-.75 0 .375.375 0 01.75 0z"
+          />
+        </svg>
+
+        {/* Cute emojis around the bag */}
+        
+      </div>
+    </div>
+  );
+}
+
+function MicIcon({ className }: { className?: string }) {
   return (
     <svg
-      width="64"
-      height="64"
-      viewBox="0 0 64 64"
+      className={className}
       fill="none"
-      xmlns="http://www.w3.org/2000/svg"
-      className="text-fg0 mb-4 size-16"
+      stroke="currentColor"
+      viewBox="0 0 24 24"
+      strokeWidth={2}
     >
       <path
-        d="M15 24V40C15 40.7957 14.6839 41.5587 14.1213 42.1213C13.5587 42.6839 12.7956 43 12 43C11.2044 43 10.4413 42.6839 9.87868 42.1213C9.31607 41.5587 9 40.7957 9 40V24C9 23.2044 9.31607 22.4413 9.87868 21.8787C10.4413 21.3161 11.2044 21 12 21C12.7956 21 13.5587 21.3161 14.1213 21.8787C14.6839 22.4413 15 23.2044 15 24ZM22 5C21.2044 5 20.4413 5.31607 19.8787 5.87868C19.3161 6.44129 19 7.20435 19 8V56C19 56.7957 19.3161 57.5587 19.8787 58.1213C20.4413 58.6839 21.2044 59 22 59C22.7956 59 23.5587 58.6839 24.1213 58.1213C24.6839 57.5587 25 56.7957 25 56V8C25 7.20435 24.6839 6.44129 24.1213 5.87868C23.5587 5.31607 22.7956 5 22 5ZM32 13C31.2044 13 30.4413 13.3161 29.8787 13.8787C29.3161 14.4413 29 15.2044 29 16V48C29 48.7957 29.3161 49.5587 29.8787 50.1213C30.4413 50.6839 31.2044 51 32 51C32.7956 51 33.5587 50.6839 34.1213 50.1213C34.6839 49.5587 35 48.7957 35 48V16C35 15.2044 34.6839 14.4413 34.1213 13.8787C33.5587 13.3161 32.7956 13 32 13ZM42 21C41.2043 21 40.4413 21.3161 39.8787 21.8787C39.3161 22.4413 39 23.2044 39 24V40C39 40.7957 39.3161 41.5587 39.8787 42.1213C40.4413 42.6839 41.2043 43 42 43C42.7957 43 43.5587 42.6839 44.1213 42.1213C44.6839 41.5587 45 40.7957 45 40V24C45 23.2044 44.6839 22.4413 44.1213 21.8787C43.5587 21.3161 42.7957 21 42 21ZM52 17C51.2043 17 50.4413 17.3161 49.8787 17.8787C49.3161 18.4413 49 19.2044 49 20V44C49 44.7957 49.3161 45.5587 49.8787 46.1213C50.4413 46.6839 51.2043 47 52 47C52.7957 47 53.5587 46.6839 54.1213 46.1213C54.6839 45.5587 55 44.7957 55 44V20C55 19.2044 54.6839 18.4413 54.1213 17.8787C53.5587 17.3161 52.7957 17 52 17Z"
-        fill="currentColor"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        d="M19 11a7 7 0 01-7 7m0 0a7 7 0 01-7-7m7 7v4m0 0H8m4 0h4m-4-8a3 3 0 01-3-3V5a3 3 0 116 0v6a3 3 0 01-3 3z"
+      />
+    </svg>
+  );
+}
+
+function SparkleIcon({ className }: { className?: string }) {
+  return (
+    <svg
+      className={className}
+      fill="none"
+      stroke="currentColor"
+      viewBox="0 0 24 24"
+      strokeWidth={2}
+    >
+      <path
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        d="M9.813 15.904L9 18.75l-.813-2.846a4.5 4.5 0 00-3.09-3.09L2.25 12l2.846-.813a4.5 4.5 0 003.09-3.09L9 5.25l.813 2.846a4.5 4.5 0 003.09 3.09L15.75 12l-2.846.813a4.5 4.5 0 00-3.09 3.09zM18.259 8.715L18 9.75l-.259-1.035a3.375 3.375 0 00-2.455-2.456L14.25 6l1.036-.259a3.375 3.375 0 002.455-2.456L18 2.25l.259 1.035a3.375 3.375 0 002.456 2.456L21.75 6l-1.035.259a3.375 3.375 0 00-2.456 2.456zM16.894 20.567L16.5 21.75l-.394-1.183a2.25 2.25 0 00-1.423-1.423L13.5 18.75l1.183-.394a2.25 2.25 0 001.423-1.423l.394-1.183.394 1.183a2.25 2.25 0 001.423 1.423l1.183.394-1.183.394a2.25 2.25 0 00-1.423 1.423z"
       />
     </svg>
   );
@@ -26,30 +75,98 @@ interface WelcomeViewProps {
 export const WelcomeView = ({
   startButtonText,
   onStartCall,
-  ref,
+  ...rest
 }: React.ComponentProps<'div'> & WelcomeViewProps) => {
   return (
-    <div ref={ref}>
-      <section className="bg-background flex flex-col items-center justify-center text-center">
-        <WelcomeImage />
+    <div
+      {...rest}
+      className="relative flex min-h-screen items-center justify-center overflow-hidden bg-gradient-to-br from-pink-300 via-pink-100 to-white px-4 py-10"
+    >
+      {/* animated pink blobs in background */}
+      <div className="pointer-events-none absolute inset-0 opacity-60">
+        <div className="absolute -top-10 -left-10 h-40 w-40 rounded-full bg-pink-300 blur-3xl" />
+        <div
+          className="absolute bottom-10 right-4 h-48 w-48 rounded-full bg-pink-400 blur-3xl"
+          style={{ animation: 'pulse 4s ease-in-out infinite' }}
+        />
+        <div
+          className="absolute top-1/3 left-1/2 h-32 w-32 -translate-x-1/2 rounded-full bg-pink-200 blur-3xl"
+          style={{ animation: 'pulse 5s ease-in-out infinite 1s' }}
+        />
+      </div>
 
-        <p className="text-foreground max-w-prose pt-1 leading-6 font-medium">
-          Chat live with your voice AI agent
-        </p>
+      <section className="relative z-10 w-full max-w-3xl rounded-3xl border border-pink-200/70 bg-white/80 px-6 py-9 text-center shadow-[0_18px_40px_rgba(255,83,150,0.35)] backdrop-blur">
+        {/* top pill + sparkle */}
+        <div className="mb-4 flex items-center justify-center gap-3">
+          <span className="inline-flex items-center gap-2 rounded-full border border-pink-200 bg-pink-50 px-4 py-1 text-xs font-semibold uppercase tracking-[0.16em] text-pink-600">
+            <span className="h-2 w-2 rounded-full bg-pink-500 shadow-[0_0_0_4px_rgba(255,126,186,0.6)]" />
+            SwiftCart · Voice Shopping BFF
+          </span>
+          <SparkleIcon className="h-5 w-5 text-pink-400" />
+        </div>
 
-        <Button variant="primary" size="lg" onClick={onStartCall} className="mt-6 w-64 font-mono">
-          {startButtonText}
-        </Button>
+        <ShoppingBagIcon />
+
+        {/* heading */}
+        <div className="mb-6">
+          <h1 className="text-balance text-3xl font-extrabold leading-tight text-foreground sm:text-4xl">
+            Shop like a{' '}
+            <span className="bg-gradient-to-r from-pink-500 via-pink-400 to-pink-600 bg-clip-text text-transparent">
+               Queen!!
+            </span>
+              
+          </h1>
+          <p className="mt-3 text-sm leading-relaxed text-muted-foreground sm:text-base">
+            Meet <span className="font-semibold text-pink-600">SwiftCart</span> – your
+            super cute voice shopping assistant for all your e-commerce cravings.  
+            Ask for products, compare options, and place orders… totally hands-free and fully pink.
+          </p>
+        </div>
+
+        {/* value / mic block */}
+        <div className="mx-auto mb-7 max-w-2xl rounded-2xl border border-pink-100 bg-pink-50/80 p-5 text-left shadow-sm">
+          <div className="flex items-start gap-3">
+            <MicIcon className="mt-1 h-7 w-7 text-pink-500" />
+            <div>
+              <p className="mb-1 text-sm font-semibold text-pink-900">
+                Your personal shopping bestie
+              </p>
+              <p className="text-xs text-pink-700 leading-relaxed">
+                Just say what you’re in the mood for –  
+                “cute hoodies under ₹1500”, “a comfy black tee”, or  
+                “what did I just buy?” – and I’ll handle the rest.
+              </p>
+            </div>
+          </div>
+        </div>
+
+      
+
+        {/* CTA */}
+        <div className="mb-2 flex flex-col items-center">
+          <Button
+            variant="primary"
+            size="lg"
+            onClick={onStartCall}
+            className="w-full max-w-xs rounded-full bg-gradient-to-r from-pink-500 via-pink-400 to-pink-600 text-sm font-bold uppercase tracking-[0.16em] text-white shadow-lg shadow-pink-300/70 hover:translate-y-[1px] hover:shadow-pink-400/80"
+          >
+            {startButtonText}
+          </Button>
+          <p className="mt-3 text-[11px] font-medium italic text-pink-700">
+            🎤 Just talk naturally – SwiftCart understands you.
+          </p>
+        </div>
       </section>
 
-      <div className="fixed bottom-5 left-0 flex w-full items-center justify-center">
-        <p className="text-muted-foreground max-w-prose pt-1 text-xs leading-5 font-normal text-pretty md:text-sm">
+      {/* docs link bottom */}
+      <div className="pointer-events-none absolute bottom-4 left-0 flex w-full items-center justify-center">
+        <p className="max-w-prose px-4 text-center text-[11px] leading-5 text-pink-700/85 md:text-xs">
           Need help getting set up? Check out the{' '}
           <a
             target="_blank"
             rel="noopener noreferrer"
             href="https://docs.livekit.io/agents/start/voice-ai/"
-            className="underline"
+            className="pointer-events-auto underline decoration-pink-400 underline-offset-2 hover:text-pink-500"
           >
             Voice AI quickstart
           </a>
