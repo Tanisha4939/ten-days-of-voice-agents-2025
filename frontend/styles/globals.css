@@ -3,100 +3,98 @@
 
 @custom-variant dark (&:is(.dark *));
 
-/* 🌸 SwiftCart Pink Theme (Light mode) */
 :root {
   --radius: 0.625rem;
 
-  /* main background + text */
-  --background: #fff6fb;
-  --foreground: #dc1d70;
+  /* 🌞 LIGHT THEME – Soft warm + navy accents */
+  --background: rgb(35, 20, 73);          /* Warm off-white */
+  --foreground: rgb(228, 193, 66);          /* Deep navy text */
 
-  /* cards + surfaces */
-  --card: #ffffff;
-  --card-foreground: #2a0b2c;
-  --popover: #ffffff;
-  --popover-foreground: #2a0b2c;
+  --card: oklch(1 0 0);
+  --card-foreground: oklch(0.20 0.05 260);
 
-  /* primary = hot pink */
-  --primary: #ff2e88;
-  --primary-foreground: #fff9fd;
+  --popover: oklch(1 0 0);
+  --popover-foreground: oklch(0.20 0.05 260);
 
-  /* secondary = baby pink */
-  --secondary: #ffe4f5;
-  --secondary-foreground: #b4256a;
+  --primary: oklch(0.82 0.16 90);             /* Rich golden primary */
+  --primary-foreground: oklch(0.16 0.04 260); /* Dark navy on gold */
 
-  --muted: #ffe4f5;
-  --muted-foreground: #a35587;
+  --secondary: oklch(0.93 0.04 260);          /* Very light navy/gray */
+  --secondary-foreground: oklch(0.25 0.06 260);
 
-  --accent: #ffc1e3;
-  --accent-foreground: #821b4c;
+  --muted: oklch(0.94 0.03 260);
+  --muted-foreground: oklch(0.55 0.06 260);
 
-  --destructive: #ff4b6b;
+  --accent: oklch(0.86 0.14 95);              /* Softer gold accent */
+  --accent-foreground: oklch(0.20 0.05 260);
 
-  --border: #ffd0e7;
-  --input: #ffd0e7;
-  --ring: #ff8dc3;
+  --destructive: oklch(0.60 0.20 25);         /* Soft red for errors */
 
-  /* charts / analytics colors */
-  --chart-1: #ff2e88;
-  --chart-2: #ff8dc3;
-  --chart-3: #ffb3d8;
-  --chart-4: #ff6ea8;
-  --chart-5: #ffc1e3;
+  --border: oklch(0.90 0.03 260);
+  --input: oklch(0.94 0.03 260);
+  --ring: oklch(0.78 0.14 90);                /* Gold focus ring */
 
-  /* sidebar */
-  --sidebar: #fff9fd;
-  --sidebar-foreground: #2a0b2c;
-  --sidebar-primary: #ff2e88;
-  --sidebar-primary-foreground: #fff9fd;
-  --sidebar-accent: #ffe4f5;
-  --sidebar-accent-foreground: #b4256a;
-  --sidebar-border: #ffd0e7;
-  --sidebar-ring: #ff8dc3;
+  /* Charts tuned to navy + gold palette */
+  --chart-1: oklch(0.78 0.14 90);             /* Gold */
+  --chart-2: oklch(0.45 0.08 250);            /* Medium navy */
+  --chart-3: oklch(0.58 0.10 260);            /* Lighter navy */
+  --chart-4: oklch(0.70 0.12 210);            /* Blue-teal accent */
+  --chart-5: oklch(0.65 0.14 95);             /* Soft golden-yellow */
+
+  /* Sidebar (if you use it) */
+  --sidebar: oklch(0.96 0.02 95);
+  --sidebar-foreground: oklch(0.20 0.05 260);
+  --sidebar-primary: oklch(0.82 0.16 90);
+  --sidebar-primary-foreground: oklch(0.16 0.04 260);
+  --sidebar-accent: oklch(0.93 0.04 260);
+  --sidebar-accent-foreground: oklch(0.20 0.05 260);
+  --sidebar-border: oklch(0.90 0.03 260);
+  --sidebar-ring: oklch(0.78 0.14 90);
 }
 
-/* 🌙 Pinky Dark mode */
+/* 🌚 DARK THEME – Premium Navy + Gold Stage Look */
 .dark {
-  --background: #e56399;
-  --foreground: #ffe4f5;
+  --background: oklch(0.18 0.05 250);         /* Deep navy background */
+  --foreground: oklch(0.92 0.12 90);          /* Warm golden text */
 
-  --card: #1f0718;
-  --card-foreground: #ffe4f5;
-  --popover: #2a0b23;
-  --popover-foreground: #ffe4f5;
+  --card: oklch(0.20 0.05 250);               /* Slightly lighter navy cards */
+  --card-foreground: oklch(0.92 0.12 90);
 
-  --primary: #ff8dc3;
-  --primary-foreground: #2a0b2c;
+  --popover: oklch(0.16 0.05 250);
+  --popover-foreground: oklch(0.92 0.12 90);
 
-  --secondary: #3a0a2c;
-  --secondary-foreground: #ffe4f5;
+  --primary: oklch(0.82 0.16 90);             /* Strong gold (spotlight) */
+  --primary-foreground: oklch(0.14 0.04 250); /* Navy text on gold */
 
-  --muted: #2b071f;
-  --muted-foreground: #ffb3d8;
+  --secondary: oklch(0.26 0.04 250);          /* Medium navy blocks */
+  --secondary-foreground: oklch(0.93 0.10 90);
 
-  --accent: #3a102d;
-  --accent-foreground: #ffe4f5;
+  --muted: oklch(0.23 0.04 250);
+  --muted-foreground: oklch(0.72 0.08 90);
 
-  --destructive: #ff6b7f;
+  --accent: oklch(0.76 0.15 95);              /* Bright accent gold */
+  --accent-foreground: oklch(0.16 0.04 250);
 
-  --border: rgba(255, 193, 227, 0.25);
-  --input: rgba(255, 193, 227, 0.2);
-  --ring: #ff8dc3;
+  --destructive: oklch(0.60 0.22 25);         /* Error red still visible on navy */
 
-  --chart-1: #ff8dc3;
-  --chart-2: #ffc1e3;
-  --chart-3: #ff6ea8;
-  --chart-4: #ffb3d8;
-  --chart-5: #ff2e88;
+  --border: oklch(0.30 0.05 250);             /* Navy border */
+  --input: oklch(0.22 0.05 250);              /* Dark navy inputs */
+  --ring: oklch(0.82 0.16 90);                /* Golden ring */
 
-  --sidebar: #1f0718;
-  --sidebar-foreground: #ffe4f5;
-  --sidebar-primary: #ff8dc3;
-  --sidebar-primary-foreground: #2a0b2c;
-  --sidebar-accent: #2b071f;
-  --sidebar-accent-foreground: #ffe4f5;
-  --sidebar-border: rgba(255, 193, 227, 0.25);
-  --sidebar-ring: #ff8dc3;
+  --chart-1: oklch(0.82 0.16 90);             /* Gold */
+  --chart-2: oklch(0.50 0.08 250);            /* Navy */
+  --chart-3: oklch(0.62 0.10 260);            /* Lighter navy */
+  --chart-4: oklch(0.72 0.14 210);            /* Blue-teal */
+  --chart-5: oklch(0.78 0.15 95);             /* Pale gold */
+
+  --sidebar: oklch(0.16 0.05 250);
+  --sidebar-foreground: oklch(0.92 0.12 90);
+  --sidebar-primary: oklch(0.82 0.16 90);
+  --sidebar-primary-foreground: oklch(0.16 0.04 250);
+  --sidebar-accent: oklch(0.26 0.04 250);
+  --sidebar-accent-foreground: oklch(0.92 0.12 90);
+  --sidebar-border: oklch(0.30 0.05 250);
+  --sidebar-ring: oklch(0.82 0.16 90);
 }
 
 @theme inline {
@@ -146,13 +144,6 @@
   }
   body {
     @apply bg-background text-foreground;
-
-    /* 💕 stronger full-page pink gradient */
-    background:
-      radial-gradient(circle at 0% 0%, #ffe4f5 0, #ffc1e3 30%, transparent 60%),
-      radial-gradient(circle at 100% 0%, #ff6ea8 0, #ff2e88 45%, #ff8dc3 80%),
-      linear-gradient(to bottom right, #ff9ac6, #ffe4f5);
-    background-attachment: fixed;
   }
 }
 
